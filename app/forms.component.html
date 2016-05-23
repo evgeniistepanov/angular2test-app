@@ -1,0 +1,12 @@
+<div class="row">
+    <h2>{{title}}</h2>
+    <nav>
+        <div class="bs-component">
+            <ul class="nav nav-pills">
+                <li><a [routerLink]="['Forms', 'MainForm']">Main Forms Page</a></li>
+                <li><a [routerLink]="['Forms', 'SimpleForm']">Simple Form</a></li>
+            </ul>
+        </div>
+    </nav>
+    <router-outlet></router-outlet>
+</div>
