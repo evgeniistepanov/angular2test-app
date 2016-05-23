@@ -42,6 +42,7 @@
               <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
+                <marker date="1464015919715" expanded="true" signature="113:284" placeholder="{&quot;selector&quot;: 'directives'...}" />
               </folding>
             </state>
           </provider>
@@ -52,7 +53,10 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="160">
               <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-              <folding />
+              <folding>
+                <marker date="1464016250061" expanded="true" signature="128:217" placeholder="{...}" />
+                <marker date="1464016250061" expanded="true" signature="162:215" placeholder="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -114,8 +118,8 @@
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+            <state relative-caret-position="60">
+              <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -310,12 +314,12 @@
       <workItem from="1463641615182" duration="16451000" />
       <workItem from="1463730131301" duration="17718000" />
       <workItem from="1464004380477" duration="7257000" />
-      <workItem from="1464012200997" duration="3894000" />
+      <workItem from="1464012200997" duration="4520000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45320000" />
+    <option name="totallyTimeSpent" value="45946000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -835,6 +839,7 @@
           <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
+            <marker date="1464015919715" expanded="true" signature="113:284" placeholder="{&quot;selector&quot;: 'directives'...}" />
           </folding>
         </state>
       </provider>
@@ -843,14 +848,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1464016250061" expanded="true" signature="128:217" placeholder="{...}" />
+            <marker date="1464016250061" expanded="true" signature="162:215" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+        <state relative-caret-position="60">
+          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
           <folding />
         </state>
       </provider>
