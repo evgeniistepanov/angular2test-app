@@ -2,7 +2,6 @@ import { Injectable }    from '@angular/core';
 import { Http, Headers } from '@angular/http';
 import 'rxjs/Rx'
 import { Observable }     from 'rxjs/Observable';
-//import 'rxjs/add/operator/toPromise';
 
 //import { Hero } from './hero';
 
@@ -13,10 +12,6 @@ export class UsersService {
     private singleUserUrl = 'https://api.github.com/users/';
 
     constructor(private http: Http) { }
-
-/*    getUsers() {
-        return this.http.get(this.usersUrl).toPromise();
-    }*/
 
     getUsers() {
         return this.http.get(this.usersUrl)
@@ -46,13 +41,9 @@ export class UsersService {
         let body = res.json();
         let objArray = [];
         for (let property in body) {
-            let obj = {};
-            obj.key = property;
-            obj.value = body[property];
+            let obj = {key: property, value: body[property]};
             objArray.push(obj);
         }
-        console.log(objArray);
-        //return {objArr: objArray, objProps: objProps};
         return objArray;
     }
 

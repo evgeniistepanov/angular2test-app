@@ -1,4 +1,4 @@
-import { Component }       from '@angular/core';
+import { Component, ViewChild }       from '@angular/core';
 import {Todo} from "./todo-obj.component";
 import {TodoChildComponent} from "./todo-child.component";
 
@@ -30,6 +30,9 @@ export class TodoComponent {
     todos : Todo[] = [];
     inputValue : string = '';
     id: number = 0;
+
+    //@ViewChild(TodoChildComponent) childcmp:TodoChildComponent;
+    @ViewChild(TodoChildComponent) childcmp;
 
     addTodo() {
         let obj = new Todo(this.id, this.inputValue);

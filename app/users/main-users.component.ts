@@ -1,4 +1,4 @@
-import { Component, OnInit }       from '@angular/core';
+import { Component, OnInit, OnChanges }       from '@angular/core';
 import {UsersService} from './users.service';
 import { Router }            from '@angular/router-deprecated';
 
@@ -27,7 +27,7 @@ import { Router }            from '@angular/router-deprecated';
 })
 
 
-export class MainUsersComponent implements OnInit{
+export class MainUsersComponent implements OnInit, OnChanges{
     title: string = 'Users';
     usersData = [];
     error: string;
@@ -61,5 +61,9 @@ export class MainUsersComponent implements OnInit{
     gotoUserDetails(user) {
         console.log(this._router);
         this._router.navigate(['UserDetail', { login: user.login }]);
+    }
+
+    ngOnChanges() {
+        console.log(arguments);
     }
 }

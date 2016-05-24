@@ -1,4 +1,4 @@
-    import { Component, OnInit }       from '@angular/core';
+    import { Component, OnInit}       from '@angular/core';
 
 
 import {RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from '@angular/router-deprecated';
@@ -26,7 +26,7 @@ import {UserDetailComponent} from './user-detail.component';
 
 @RouteConfig([
     {
-        path: '/main-users',
+        path: '/',
         name: 'MainUsers',
         component: MainUsersComponent,
         useAsDefault: true
@@ -55,4 +55,5 @@ export class UsersComponent implements OnInit{
     onTitleClick() {
         console.log(this.usersData);
     }
+
 }
