@@ -10,6 +10,7 @@ import { Observable }     from 'rxjs/Observable';
 export class UsersService {
 
     private usersUrl = 'https://api.github.com/users';
+    private singleUserUrl = 'https://api.github.com/users/';
 
     constructor(private http: Http) { }
 
@@ -24,6 +25,12 @@ export class UsersService {
             .catch(this.handleError);
     }
 
+    getUser(login : string) {
+        return this.http.get(this.singleUserUrl + login)
+            .map(this.convertObjToArray)
+            .catch(this.handleError);
+    }
+
     getUsersWithRXjs() {
         return this.http.get(this.usersUrl)
             .map(this.extractData)
@@ -35,15 +42,20 @@ export class UsersService {
         return body || [];
     }
 
-    getUser(id: number) {
-        return this.getUsers()
-            .then(heroes => heroes.filter(hero => hero.id === id)[0]);
+    private convertObjToArray(res) {
+        let body = res.json();
+        let objArray = [];
+        for (let property in body) {
+            let obj = {};
+            obj.key = property;
+            obj.value = body[property];
+            objArray.push(obj);
+        }
+        console.log(objArray);
+        //return {objArr: objArray, objProps: objProps};
+        return objArray;
     }
 
-/*    private handleError(error: any) {
-        console.error('An error occurred', error);
-        return Promise.reject(error.message || error);
-    }*/
     private handleError (error: any) {
         // In a real world app, we might use a remote logging infrastructure
         // We'd also dig deeper into the error to get a better message

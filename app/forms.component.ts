@@ -11,7 +11,7 @@ import {MainFormComponent} from "./main-form.component";
 
 @RouteConfig([
     {
-        path: '/main-form',
+        path: '/',
         name: 'MainForm',
         component: MainFormComponent,
         useAsDefault: true

@@ -17,7 +17,7 @@ import {DirectivesComponent} from './directives/directives.component'
                 <li><a [routerLink]="['Main']"><span>Main</span></a></li>
                 <li><a [routerLink]="['Todo']"><span>ToDo</span></a></li>
                 <li><a [routerLink]="['Forms', 'MainForm']">Forms</a></li>
-                <li><a [routerLink]="['Users']">Users</a></li>
+                <li><a [routerLink]="['Users', 'MainUsers']">Users</a></li>
                 <li><a [routerLink]="['Directives']">Directives</a></li>
                 </ul>
                 </div>
@@ -53,7 +53,7 @@ import {DirectivesComponent} from './directives/directives.component'
         component: FormsComponent,
     },
     {
-        path: '/users',
+        path: '/users/...',
         name: 'Users',
         component: UsersComponent,
     },
